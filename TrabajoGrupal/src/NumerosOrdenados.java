@@ -7,6 +7,26 @@ public class NumerosOrdenados {
         TreeSet<Integer> numeros = new TreeSet<>();
 
         System.out.println("Ingrese números. Escriba 'salir' para terminar.");
+
+        while (true) {
+            System.out.print("Ingrese un número: ");
+            String input = scanner.nextLine();
+
+            if (input.equalsIgnoreCase("salir")) {
+                break;
+            }
+
+            try {
+                int numero = Integer.parseInt(input);
+                numeros.add(numero);
+            } catch (NumberFormatException e) {
+                System.out.println("Por favor, ingrese un número válido o 'salir' para terminar.");
+            }
+        }
+
+        scanner.close();
+
+
     }
     
 }
