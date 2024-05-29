@@ -18,6 +18,8 @@ public class VocalA {
             contar++;
         }
     }
+
+    System.out.println("La cantidad de veces que aparece la vocal 'A' en la frase son: " + contar);
    
 
      }
