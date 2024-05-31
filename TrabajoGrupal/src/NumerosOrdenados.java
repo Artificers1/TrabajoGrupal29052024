@@ -25,7 +25,11 @@ public class NumerosOrdenados {
         }
 
         scanner.close();
-
+        
+        System.out.println("Números ingresados ordenados de menor a mayor:");
+        for (int numero : numeros) {
+            System.out.println(numero);
+        }
 
     }
     
